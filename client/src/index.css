@@ -1,0 +1,260 @@
+/* Add CSS */
+.banner {
+  display: grid;
+  grid-template-columns: 12% 12% 50% 20%;
+  overflow: hidden;
+  background-color: #e9e9e9;
+  position: sticky;
+  top: 0;
+}
+.banner a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 34px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.banner h1 {
+  font-size: 35px;
+  text-align: center;
+}
+.banner a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.banner a:focus {
+  background-color: #0281e8;
+  color: black;
+}
+
+.banner .search-container {
+  float: right;
+  padding: 14px 16px;
+}
+
+.banner input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+@media screen and (max-width: 600px) {
+  .banner .search-container {
+    float: none;
+  }
+  .banner a,
+  .banner input[type="text"],
+  .banner .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 15px 32px;
+  }
+  .banner input[type="text"] {
+    border: 1px solid #ccc;
+  }
+}
+
+.questionPageBanner {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  overflow: hidden;
+  background-color: white;
+  padding: 25px 0;
+  text-align: center;
+}
+.number_of_questions {
+  font-size: 20px;
+  padding-top: 15px;
+}
+.indicator {
+  font-size: 20px;
+  padding-top: 15px;
+}
+.addquestion button {
+  text-align: center;
+  color: white;
+  background-color: #165a92;
+  text-decoration: none;
+  display: inline-block;
+
+  font-size: 20px;
+  padding: 15px 10px;
+  border-radius: 8px;
+}
+.questionList {
+  display: grid;
+  grid-template-columns: 20% 60% 13%;
+
+  padding: 20px 0;
+  border-bottom: 1px dotted;
+}
+.column1 {
+  display: grid;
+  text-align: center;
+}
+.column2 {
+  display: grid;
+  padding-top: 10px;
+  padding-left: 100px;
+  font-size: 20px;
+}
+.column3 {
+  display: grid;
+  text-align: right;
+  font-size: 15px;
+}
+.op mark {
+  color: darkblue;
+  background-color: white;
+}
+.date mark {
+  color: darkgreen;
+  background-color: white;
+}
+.time mark {
+  color: teal;
+  background-color: white;
+}
+.questionTitle a {
+  color: blue;
+}
+.questionTitle a:hover {
+  color: darkblue;
+}
+.tags {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-column-gap: 10px;
+}
+.singleTag {
+  display: inline-block;
+  text-align: center;
+  background-color: lightgrey;
+  font-size: 15px;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+
+#heading {
+  padding: 25px;
+  padding-top: 25px;
+  font-size: 30px;
+}
+.subheading {
+  padding: 10px 0;
+  font-size: 15px;
+}
+.fillBox {
+  width: 1500px;
+  height: 60px;
+  font-size: 15px;
+}
+.Post {
+  margin-left: 30px;
+  background: #165a92;
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 15px 10px;
+  border-radius: 8px;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  font-size: 17px;
+}
+
+#answerPageBanner {
+  display: grid;
+  grid-template-columns: 25% 55% 20%;
+  text-align: center;
+}
+#answer_count {
+  padding-top: 12px;
+  padding-right: 90px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.answerList {
+  display: grid;
+  grid-template-columns: 80% 13%;
+  padding: 20px 0;
+  border-bottom: 1px dotted;
+}
+.answerText {
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 17px;
+  border-right: 1px dotted;
+}
+.ansDetail {
+  display: grid;
+  padding-top: 20px;
+  font-size: 15px;
+  text-align: right;
+}
+#answerQuestion {
+  background: #165a92;
+  position: sticky;
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 15px 10px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  margin-top: 50px;
+}
+
+#Atextbox {
+  margin-top: 10px;
+  height: 400px;
+}
+
+#postAnswer {
+  margin-left: 30px;
+  background: #165a92;
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 15px 10px;
+  border-radius: 8px;
+}
+
+.tagsBox {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  text-align: center;
+  margin-top: 20px;
+}
+.divTag {
+  margin: 100px;
+  border: 1px solid;
+  padding: 70px 0;
+}
+.number_of_tags {
+  text-align: center;
+  padding-top: 20px;
+  font-weight: bold;
+}
+.indicator {
+  font-weight: bold;
+}
